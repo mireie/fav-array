@@ -7,7 +7,7 @@
 
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
   <link rel="stylesheet" href="css/styles.css">
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+  <script src="js/jquery-3.6.0.js"></script>
   <script src="js/scripts.js"></script></script>
   <title>Your Favorite Things</title>
 </head>
@@ -15,7 +15,31 @@
   <div class="container">
     <h1>Your favorite things!</h1>
     <p>Enter your favorite things below:</p>
-    
+    <div class="things row">
+      <div class="col col-md-6">
+        <form id="things">
+          <label for="food">Favorite Food</label>
+          <input type="text" class="form-control" id="food">
+          <label for="animal">Favorite Animal</label>
+          <input type="text" class="form-control" id="animal">
+          <label for="mineral">Favorite Mineral</label>
+          <input type="text" class="form-control" id="mineral">
+          <label for="vegetable">Favorite Vegetable</label>
+          <input type="text" class="form-control" id="vegetable">
+          <label for="show">Favorite TV Show</label>
+          <input type="text" class="form-control" id="show">
+          <button type="submit" class="btn btn-primary">Push Here</button>
+        </form>
+      </div>
+      <div class="col col-md-6">
+        <h2>Items 2, 3, and 1</h2>
+        <ul>
+          <li id="thing1"></li>
+          <li id="thing2"></li>
+          <li id="thing3"></li>
+        </ul>
+      </div>
+    </div>
 
   </div>
 </body>
